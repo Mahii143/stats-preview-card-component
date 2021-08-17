@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 120vh;
+    width: 100%;
+    background-color: hsl(233, 47%, 7%);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+header{
+    width: 85%;
+    height: 33vh;
+    position: relative;
+    left:7.5%;
+    top:7.5%;
+}
+.hero_image_container{
+    width:100%;
+    height: 100%;
+    background: linear-gradient(hsla(277, 83%, 32%, 0.507),hsla(277, 83%, 32%, 0.438)), url(images/image-header-mobile.jpg) 0 0 no-repeat;
+    /* background-position: center;
+    background-size: cover; */
+    border-top-right-radius:7px ;
+    border-top-left-radius: 7px;
+}
+main{
+    position: relative;
+    top:7.5%;
+    left:7.5%;
+    padding: 1rem;
+    width:85%;
+    background-color: hsl(244, 38%, 16%);
+    margin-bottom: 1rem;
+    border-bottom-right-radius:7px ;
+    border-bottom-left-radius: 7px;
+}
+.main_container{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.detail{
+    padding: 0.8rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+}
+.footer{
+    padding:2rem;
+}
+.detail_heading{
+    color: hsl(0, 0%, 100%);
+}
+.detail_para,.detail>p{
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.detail_item>p{
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+}
+.detail_para{
+    line-height: 1.7em;
+    font-size: 14px;
+}
+.ins{
+    color: hsl(277, 64%, 61%);
+}
+
+@media (min-width:1024px){
+    body{
+        height: 100vh;
+    }
+    .container{
+        width: 85%;
+        height: 70vh;
+        display: flex;
+        flex-direction: row-reverse;
+        top:10%;
+        left:-1%;
+        position: absolute;
+    }
+    header,main{
+        height: 100%;
+        width: 50%;
+    }
+    .main_container{
+        padding:1rem;
+    }
+    main{
+        padding: 3.5rem;
+        border-bottom-right-radius:0px;
+        border-bottom-left-radius: 7px;
+        border-top-left-radius: 7px;
+    }
+    .hero_image_container{
+        border-top-right-radius:7px ;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 7px;
+    }
+    .stats{
+        width: 90%;
+        display: flex;
+        bottom: 10%;
+        position: absolute;
+        justify-content: space-between;
+        left:4%;
+    }
+    .detail_item{
+        width: 33%;
+    }
+    .detail_heading{
+        font-size:18px ;
+        text-align: left;
+    }
+    .detail{
+        padding: 0;
+    }
+    .detail_para{
+        font-size: 15px;
+        text-align: left;
+        position: absolute;
+    }
+    .detail_para>p{    
+        margin-top: 3rem;
+        padding-right: 20px;
+    }
+}
